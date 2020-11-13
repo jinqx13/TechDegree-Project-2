@@ -20,7 +20,7 @@ a:hover {
 header {
     font-family: Verdana, Geneva, sans-serif;
     background-color: #f3f3f3;
-    font: black;
+    color: black;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 2em;
@@ -45,7 +45,6 @@ li {
     text-decoration: none;
     list-style: none;
     display: block;
-    text-decoration: uppercase;
     padding: 20px 20px;
     background-color: #fff;
 }
@@ -61,7 +60,7 @@ footer {
 
 p {
     color: slategrey;
-    font-size: 1.3em;
+    font-size: 1em;
     line-height: 1.2em;
     margin: 5px;
 }
@@ -76,13 +75,12 @@ h3 {
     color: dimgrey;
 }
 
-h3 {
-}
-
 /* -------Classes-------- */
 
-.container {
-    align-content: center;
+.header,
+.nav {
+    display: flex;
+    flex-direction: column;
 }
 
 .description {
@@ -113,7 +111,7 @@ h3 {
 }
 
 .wrapper {
-    margin; 0 auto;
+    margin: 0 auto;
 }
 
 .body-header {
@@ -154,8 +152,10 @@ h3 {
 
 .footer-name {
     padding-top: 1em;
-    display: inline;
+    display: inline-block;
     font-size: 1em;
+    width: 50%;
+    float: left;
 }
 
 .header-img {
@@ -166,8 +166,10 @@ h3 {
 
 .top-btn {
     display: inline-block;
-    margin-left: 10em;
+    padding-top: 16px;
     font-size: 1em;
+    width: 50%;
+    float: right;
 }
 
 .footer-nav {
@@ -211,13 +213,8 @@ h3 {
         clear: both;
     }
 
-    /* .container {
-        padding: 0;
-        margin: 0;
-    } */
-
     .body-container {
-        width: 50%;
+        width: calc(50% - 10px);
         float: left;
         background-color: #fff;
         margin: auto;
@@ -231,11 +228,6 @@ h3 {
     .line2 {
         float: right;
     }
-
-    .container img {
-        
-    }
-
 
     footer h2 {
         padding-top: 30px;
@@ -260,17 +252,19 @@ h3 {
 
     .footer-name {
         float: left;
-        padding-left: 8em;
+        padding-left: 1em;
+        width: 50%;
     }
 
     .footer-nav {
         display: inline-block;
         float: right;
-        
+        width: 50%;
+        padding-top: 5px;
     }
 
     .footer-nav li {
-        margin: 0px 50px;
+        margin: 0px 20px;
         background-color: inherit;
         color: slategrey;
         font-weight: bold;
@@ -286,7 +280,6 @@ h3 {
         clear: both;
     }
   
-
 }
 
 @media (min-width: 1024px) {
@@ -315,7 +308,7 @@ h3 {
         
     .body-container {
         float: left;
-        width: 33%;
+        width: calc(34% - 10px);
         
     }
 
@@ -329,12 +322,3 @@ h3 {
         clear: both;
     }
 }   
-
-
-/* -------Clearfix-------- */
-
-.clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
-}
