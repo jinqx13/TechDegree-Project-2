@@ -18,7 +18,7 @@ a:hover {
 }
 
 header {
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     background-color: #f3f3f3;
     color: black;
     margin: 0 auto;
@@ -34,7 +34,8 @@ footer {
 }
 
 body {
-    font-family: Verdana, Geneva, sans-serif;
+    /* font-family: Verdana, Geneva, sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
 }
 
@@ -83,29 +84,42 @@ h3 {
     flex-direction: column;
 }
 
+.header-img {
+    padding: 7px;
+    padding-top: 1.5em;
+    width: 65%;
+}
+
+.nav li {
+    font-weight: 600;
+    color: slategrey;
+}
+
 .description {
     padding-top: 5px;
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
+    letter-spacing: 1px;
+    font-weight: 400;
 }
 
 .nav {
     text-align: center;
     display: block;
     text-transform: uppercase;
-    font-weight: bold;
     margin: 10px;
     padding: 5px 5px;
 }
 
 .body-img {
-    max-width: 70%;
+    width: 27em;
+    margin: 0 20px;
     padding-top: 2em;
 }
 
 .body-desc {
-    max-width: 60%;
-    margin: 0 auto;
+    width: 27em;
+    margin: auto;
     padding-bottom: 2em;
     padding-top: .25em;
 }
@@ -147,7 +161,7 @@ h3 {
 
 .contact-email {
     padding-bottom: 3em;
-    border-bottom: 2px dimgrey solid;
+    border-bottom: 2px rgb(225, 225, 225) solid;
 }
 
 .footer-name {
@@ -156,12 +170,6 @@ h3 {
     font-size: 1em;
     width: 50%;
     float: left;
-}
-
-.header-img {
-    padding: 7px;
-    padding-top: 1.5em;
-    width: 80%;
 }
 
 .top-btn {
@@ -184,7 +192,7 @@ h3 {
 
 /* -------Media Query-------- */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     li {
         display: inline-block;
         padding: 10px 10px;
@@ -214,19 +222,18 @@ h3 {
     }
 
     .body-container {
-        width: calc(50% - 10px);
+        width: 50%;
         float: left;
         background-color: #fff;
         margin: auto;
-        padding: 0;
     }
 
-    .line1 {
-        float: left;
+    .body-img {
+        width: 20em;
     }
-
-    .line2 {
-        float: right;
+    
+    .body-desc {
+        width: 20em;
     }
 
     footer h2 {
@@ -308,12 +315,16 @@ h3 {
         
     .body-container {
         float: left;
-        width: calc(34% - 10px);
-        
+        width: 33%;
+    }
+
+    .container {
+        width: 1024px;
+        margin: 0 auto;
     }
 
     .footer-phone {
-        padding-bottom: 15px;
+        padding-bottom: 2px;
     }
 
     .clearfix::after {
