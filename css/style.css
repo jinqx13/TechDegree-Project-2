@@ -112,13 +112,13 @@ h3 {
 }
 
 .body-img {
-    width: 27em;
+    width: 90%;
     margin: 0 20px;
     padding-top: 2em;
 }
 
 .body-desc {
-    width: 27em;
+    width: 90%;
     margin: auto;
     padding-bottom: 2em;
     padding-top: .25em;
@@ -229,11 +229,11 @@ h3 {
     }
 
     .body-img {
-        width: 20em;
+        width: 24em;
     }
     
     .body-desc {
-        width: 20em;
+        width: 24em;
     }
 
     footer h2 {
@@ -259,8 +259,8 @@ h3 {
 
     .footer-name {
         float: left;
-        padding-left: 1em;
         width: 50%;
+        padding-right: 14em;
     }
 
     .footer-nav {
@@ -268,6 +268,7 @@ h3 {
         float: right;
         width: 50%;
         padding-top: 5px;
+        padding-left: 3em;
     }
 
     .footer-nav li {
@@ -318,6 +319,14 @@ h3 {
         width: 33%;
     }
 
+    .body-img {
+        width: 21em;
+    }
+    
+    .body-desc {
+        width: 21em;
+    }
+
     .container {
         width: 1024px;
         margin: 0 auto;
@@ -325,6 +334,14 @@ h3 {
 
     .footer-phone {
         padding-bottom: 2px;
+    }
+
+    .footer-name {
+        padding-right: 23em;
+    }
+
+    .footer-nav {
+        padding-left: 10em;
     }
 
     .clearfix::after {
